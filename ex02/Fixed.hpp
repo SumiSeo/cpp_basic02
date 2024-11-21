@@ -18,7 +18,6 @@ class Fixed
 	Fixed(const float float_value);
 	~Fixed(void);
 	Fixed(const Fixed &original);
-	// Fixed &operator=(const Fixed &original);
 	Fixed operator*(Fixed const &ref) const;
 	float toFloat(void) const;
 	int toInt(void) const;
@@ -34,7 +33,6 @@ class Fixed
 
 	Fixed operator+(Fixed const &ref) const;
 	Fixed operator-(Fixed const &ref) const;
-	// Fixed operator*(Fixed const &ref) const;
 	Fixed operator/(Fixed const &ref) const;
 
 	Fixed &operator++(void);
