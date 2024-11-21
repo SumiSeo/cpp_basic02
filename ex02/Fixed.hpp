@@ -9,7 +9,6 @@ class Fixed
 {
   private:
 	int value;
-
 	const static int bits = 8;
 
   public:
@@ -42,7 +41,6 @@ class Fixed
 
 	static Fixed &min(Fixed &ref1, Fixed &ref2);
 	static const Fixed &min(Fixed const &ref1, Fixed const &ref2);
-
 	static Fixed &max(Fixed &ref1, Fixed &ref2);
 	static const Fixed &max(Fixed const &ref1, Fixed const &ref2);
 };
