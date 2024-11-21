@@ -3,15 +3,16 @@
 
 # include <cstring>
 # include <iostream>
+# include <math.h>
 
 class Fixed
 {
   private:
 	int value;
-	int float_value;
 	const static int bits = 8;
 
   public:
+	Fixed(void);
 	Fixed(int value);
 	Fixed(const float float_value);
 	~Fixed(void);
@@ -21,4 +22,5 @@ class Fixed
 	int toInt(void) const;
 };
 
+std::ostream &operator<<(std::ostream &out, const Fixed &fixed);
 #endif /*__FIXED__POINT__HPP*/
